@@ -1,0 +1,533 @@
+{
+  "schema_version": 1,
+  "snapshot_at": "2026-11-18T17:20:33.549Z",
+  "verification_note": "Data de captura do catálogo em UTC. A data da última verificação de cada oferta consta em verified. Confirmado indica a existência ou condição descrita da oferta, inclusive rodadas fechadas. A concessão e a disponibilidade geográfica dependem das regras de cada programa.",
+  "record_count": 25,
+  "license": {
+    "id": "ODC-By-1.0",
+    "url": "https://opendatacommons.org/licenses/by/1-0/"
+  },
+  "deals": [
+    {
+      "id": "aws-founders",
+      "name": "AWS Activate Founders",
+      "org": "Amazon Web Services",
+      "category": "Créditos em nuvem",
+      "country": "Brasil",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "stage": "Protótipo / MVP",
+      "eligibility": "Startups autofinanciadas em candidatura direta. A AWS exige primeira concessão ou pedido superior ao valor já recebido; aprovação individual depende do histórico.",
+      "requirements": "Conta AWS no Paid Tier, pré-Series B, empresa fundada nos últimos 10 anos e primeira concessão ou pedido de valor maior que o anterior. Conferir faturamento e histórico no painel.",
+      "value": "US$ 1.000 iniciais",
+      "amount": 1000,
+      "currency": "USD",
+      "validity": "Confirmar a expiração no painel após concessão",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://aws.amazon.com/startups/credits/",
+      "evidence": "A AWS lista US$ 1.000 iniciais e até US$ 5.000 para participantes selecionados. Candidatura direta para autofinanciadas, conta Paid Tier e regra de crédito anterior: primeira concessão ou solicitação de valor superior ao já recebido.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "azure-student",
+      "name": "Azure for Students",
+      "org": "Microsoft Azure",
+      "category": "Créditos em nuvem",
+      "country": "Brasil",
+      "audience": [
+        "Estudantes"
+      ],
+      "stage": "Graduação / estudo",
+      "eligibility": "Oferta para estudantes universitários com verificação acadêmica.",
+      "requirements": "18 anos ou mais, graduação de dois ou quatro anos em tempo integral em instituição credenciada e verificação por e-mail acadêmico. A assinatura é desativada ao consumir os créditos; mudar para uma assinatura paga é opcional.",
+      "value": "US$ 100 em créditos",
+      "amount": 100,
+      "currency": "USD",
+      "validity": "12 meses a partir da ativação",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://azure.microsoft.com/pt-br/pricing/offers/ms-azr-0170p",
+      "evidence": "Termos brasileiros confirmam US$ 100 em 12 meses sem cartão na inscrição, idade mínima de 18 anos e verificação acadêmica.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "gcp-start",
+      "name": "Google Cloud Start Tier",
+      "org": "Google Cloud",
+      "category": "Créditos em nuvem",
+      "country": "Brasil",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "stage": "MVP funcional",
+      "eligibility": "Startup tecnológica pré-investimento com MVP funcional e planos de captar em breve.",
+      "requirements": "Fundada há até 24 meses, sem créditos anteriores além do teste gratuito, com roadmap e modelo de negócio claros.",
+      "value": "Até US$ 2.000",
+      "amount": 2000,
+      "currency": "USD",
+      "validity": "1 ano após concessão",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://cloud.google.com/startup/pre-funded",
+      "evidence": "A página oficial específica para pré-investimento confirma US$ 2.000, MVP funcional, modelo de negócio claro e planos de buscar investimento em breve. Créditos do programa cobrem modelos proprietários do Google conforme termos.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "github-student",
+      "name": "GitHub Student Developer Pack",
+      "org": "GitHub Education",
+      "category": "Ferramentas dev",
+      "country": "Brasil",
+      "audience": [
+        "Estudantes"
+      ],
+      "stage": "Graduação / estudo",
+      "eligibility": "Estudantes com 13 anos ou mais, matriculados em programa que concede diploma, com conta pessoal no GitHub e comprovação do vínculo atual.",
+      "requirements": "O GitHub aceita carteirinha com data de matrícula vigente, grade, histórico ou declaração de matrícula. O e-mail acadêmico pode ser obrigatório conforme a instituição.",
+      "value": "GitHub Pro gratuito + ofertas",
+      "validity": "Enquanto elegível para o GitHub Pro. Ofertas parceiras têm regras próprias.",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://education.github.com/pack",
+      "evidence": "O catálogo oficial GitHub Education lista o Student Developer Pack. Requisitos e comprovantes aceitos: https://docs.github.com/pt/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "jetbrains-student",
+      "name": "JetBrains Student Pack",
+      "org": "JetBrains",
+      "category": "Ferramentas dev",
+      "country": "A verificar",
+      "audience": [
+        "Estudantes"
+      ],
+      "stage": "Graduação / estudo",
+      "eligibility": "Estudante em tempo integral em programa educacional credenciado de longa duração; comprovação acadêmica.",
+      "requirements": "Uso estritamente educacional, sem uso comercial. Verificação por e-mail universitário, ISIC/ITIC ou GitHub Student Developer Pack.",
+      "value": "Licenças educacionais",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.jetbrains.com/academy/student-pack/?var=1",
+      "evidence": "A página oficial confirma licença gratuita, sem cartão, para uso educacional não comercial e lista métodos de verificação.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "microsoft-startups",
+      "name": "Microsoft for Startups",
+      "org": "Microsoft",
+      "category": "Créditos em nuvem",
+      "country": "Brasil",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "stage": "Inicial",
+      "eligibility": "Avaliação para startups B2B com software, IA ou tecnologia; a documentação de elegibilidade exige produto ou serviço baseado em software próprio.",
+      "requirements": "Sede em país com Azure, produto ou serviço baseado em software próprio e dados de pagamento na configuração da conta. Conferir histórico e faturamento antes de avançar.",
+      "value": "US$ 1.000 iniciais",
+      "amount": 1000,
+      "currency": "USD",
+      "validity": "Consultar a expiração da concessão no portal.",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application",
+      "evidence": "O guia oficial da candidatura mantém US$ 1.000 após configurar a conta, enquanto a análise está pendente. Benefícios superiores dependem de critérios; consultar https://learn.microsoft.com/en-us/startups/microsoft-for-startups/overview.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "notion-education",
+      "name": "Notion para estudantes",
+      "org": "Notion",
+      "category": "Produtividade",
+      "country": "Brasil",
+      "audience": [
+        "Estudantes"
+      ],
+      "stage": "Graduação / estudo",
+      "eligibility": "Estudante de instituição de ensino superior reconhecida no WHED.",
+      "requirements": "E-mail acadêmico como e-mail principal e workspace individual no plano Free.",
+      "value": "Plano Education gratuito",
+      "validity": "Verificação anual",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.notion.com/help/notion-for-education",
+      "evidence": "A central de ajuda mantém plano Education gratuito para estudantes elegíveis em workspace individual, com e-mail acadêmico e verificação.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "notion-startups",
+      "name": "Notion for Startups",
+      "org": "Notion",
+      "category": "Produtividade",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "stage": "Inicial",
+      "eligibility": "A FAQ documenta teste de um mês para agências, consultorias, prestadoras de serviço e empresas com menos de dez funcionários. As faixas de três e seis meses são destinadas a startups de produtos ou serviços tecnológicos escaláveis, sujeitas à avaliação.",
+      "requirements": "Conferir regras da candidatura, afiliação e plano atual.",
+      "value": "Até 6 meses grátis",
+      "validity": "Até 6 meses, conforme enquadramento",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.notion.com/startups",
+      "evidence": "A FAQ oficial distingue explicitamente um mês para agências e equipes menores e faixas de três a seis meses para startups de tecnologia elegíveis.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-0f2a41b07973f12e097a26e6d5fc6bb9",
+      "name": "ElevenLabs Startup Grants",
+      "org": "ElevenLabs",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "Startup de produto com menos de 25 funcionários. Agências, consultorias e pequenas e médias empresas são excluídas pelas condições do programa.",
+      "requirements": "Uma candidatura por empresa. Verificar histórico e condições de cobrança na conta antes de avançar.",
+      "value": "Plano Scale por 12 meses e 33 milhões de caracteres",
+      "validity": "12 meses",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://elevenlabs.io/startup-grants",
+      "evidence": "A página oficial mantém candidatura, descreve 33 milhões de caracteres e 12 meses no Scale e exclui agências, consultorias e SMBs.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-265761c8780372c2c3cc40124a5e47a6",
+      "name": "Fireworks AI – treinamento Muse Glimmer 30B",
+      "org": "Fireworks AI",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento",
+        "Estudantes"
+      ],
+      "eligibility": "Oferta de treinamento do modelo via Fireworks, sem exigência de cartão conforme anúncio. Disponibilidade individual no Brasil a confirmar.",
+      "value": "Treinamento gratuito de um modelo",
+      "deadline": "2026-11-30",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://fireworks.ai/blog/train-muse-glimmer-for-free",
+      "evidence": "O anúncio de 20/10/2026 confirma treinamento gratuito de Muse Glimmer 30B com SFT, DPO e RL até 30/11, sem cartão. Trata-se de treinamento do modelo, sem concessão de saldo monetário.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-29a91512bf5edf7f2d22f3ed68e798bc",
+      "name": "Alibaba Cloud AI Catalyst Program",
+      "org": "Alibaba Cloud",
+      "category": "Créditos em nuvem",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "Conta Alibaba Cloud válida, registro e avaliação pelo programa. Elegibilidade operacional no Brasil e aceitação para solo/autofinanciadas a verificar.",
+      "value": "Até US$ 120 mil em créditos cloud e até 2 bilhões de tokens no Model Studio, sujeitos à aprovação",
+      "amount": 120000,
+      "currency": "USD",
+      "validity": "Validade do crédito varia com o valor concedido",
+      "deadline": "2027-03-31",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.alibabacloud.com/pt-BR/startup/ai",
+      "evidence": "A página oficial em PT-BR anuncia os dois benefícios; os termos fixam a campanha até 31/03/2027 e os créditos só se aplicam a serviços selecionados.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-3d5ce064e5c6249e825d6fa5f6c672fc",
+      "name": "OpenAI – créditos de API para assinaturas elegíveis",
+      "org": "OpenAI",
+      "category": "IA e modelos",
+      "country": "A verificar",
+      "audience": [
+        "Solo founder",
+        "Startups"
+      ],
+      "eligibility": "Planos ChatGPT Pro 100, 200 e 500 e licenças Standard/Premium pagas de espaços Business elegíveis. Plus não se qualifica.",
+      "requirements": "Assinatura elegível ativa há pelo menos sete dias. Ativação feita pelo titular ou proprietário elegível, com organização de API vinculada.",
+      "value": "Pro: US$ 100, 200 ou 500 por ciclo mensal. Business: US$ 20 por licença Standard ou US$ 100 por Premium, sujeito ao limite do espaço de trabalho.",
+      "currency": "USD",
+      "validity": "Por ciclo de faturamento, conforme o plano",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://help.openai.com/pt-br/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions",
+      "evidence": "Central de Ajuda da OpenAI, seções Elegibilidade e disponibilidade e Valores dos créditos. O benefício cobre a organização da API vinculada.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-5b282fc69760af3c16a2f741409d33d8",
+      "name": "Claude for Startups – coorte direta",
+      "org": "Anthropic",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "Programa para founders em estágio inicial; coorte atual lotada e sem novas candidaturas.",
+      "value": "Inscrições fechadas. US$ 1.000 em crédito de API anunciados para a rodada anterior.",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://claude.com/programs/startups",
+      "evidence": "A página atual informa que a coorte está lotada. O anúncio oficial anterior descrevia US$ 1.000 na API própria como parte da oferta da rodada.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-5e23cccfbf5932e9f14ed17d31840d9d",
+      "name": "Vercel AI Gateway – Free Tier",
+      "org": "Vercel",
+      "category": "IA e modelos",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "eligibility": "Equipe Vercel no Free Tier do AI Gateway. Verificar se a equipe já comprou créditos.",
+      "requirements": "O crédito começa no primeiro uso do AI Gateway. Restrito a modelos elegíveis e com limites por modelo. A primeira compra encerra o crédito gratuito mensal.",
+      "value": "US$ 5 por mês de créditos do AI Gateway",
+      "amount": 5,
+      "currency": "USD",
+      "validity": "Mensal enquanto no Free Tier",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://vercel.com/docs/ai-gateway/pricing",
+      "evidence": "Documentação oficial, seção Free and paid tiers: crédito mensal, início no primeiro pedido e perda do benefício ao migrar para o nível pago.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-808bdf02ca42e1444c8934061164397d",
+      "name": "NVIDIA Inception",
+      "org": "NVIDIA",
+      "category": "Programa de apoio",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "Startup formalizada há menos de 10 anos, site funcional, caso de uso claro para tecnologia NVIDIA e ao menos um founder ativo. Consultorias e desenvolvimento terceirizado são excluídos.",
+      "requirements": "A filiação é gratuita, sem exigência de equity. O perfil solo pode atender ao mínimo de um founder; a atividade empresarial precisa ser verificada.",
+      "value": "Treinamento, suporte e possíveis créditos cloud de parceiros",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.nvidia.com/en-us/startups/",
+      "evidence": "A NVIDIA mantém formulário e lista descontos, treinamento, suporte e créditos cloud oferecidos pela NVIDIA e parceiros, sem valor fixo publicado na oferta.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-81eeaa6a661f2d3f0f9c1d41893184ff",
+      "name": "Grok for Startups – candidatura direta",
+      "org": "xAI",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "A empresa e o financiamento passam por verificação; código de parceiro é opcional no formulário público. Aceitação de autofinanciadas e disponibilidade no Brasil a verificar.",
+      "value": "Crédito dimensionado por estágio e uso",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://x.ai/startups",
+      "evidence": "A página oficial confirma saldo compartilhado com Grok API. O formulário oficial https://x.ai/startups/apply dimensiona o valor após avaliação e exibe campo opcional de indicação.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-86c8d0655fe53eaf47f5e0f676e60a13",
+      "name": "Cloudflare for Startups – Tier 3",
+      "org": "Cloudflare",
+      "category": "Créditos em nuvem",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "eligibility": "Startups autofinanciadas ou bootstrapped com menos de US$ 1 milhão captado.",
+      "requirements": "Workers AI fora da cobertura para novas startups. Para participantes existentes: limite de US$ 2.500 no Tier 3 até 1º de dezembro. AI Gateway temporariamente fora da cobertura.",
+      "value": "US$ 10.000 em créditos",
+      "amount": 10000,
+      "currency": "USD",
+      "validity": "1 ano",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.cloudflare.com/startups/",
+      "evidence": "A página oficial lista Tier 3 de US$ 10.000 por um ano e confirma aumento de US$ 5.000 para US$ 10.000, candidatura sem captação mínima e restrições para Workers AI e AI Gateway.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-8ebbf06beea2f700f97ca9552cd4020b",
+      "name": "Fireworks AI – crédito inicial de API",
+      "org": "Fireworks AI",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento",
+        "Estudantes"
+      ],
+      "eligibility": "Crédito inicial de conta Fireworks. Disponibilidade individual no Brasil a confirmar.",
+      "requirements": "Após esgotar o crédito, a conta sem meio de pagamento fica suspensa. Continuidade depende de adicionar pagamento e créditos.",
+      "value": "US$ 1 de crédito inicial",
+      "amount": 1,
+      "currency": "USD",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://docs.fireworks.ai/faq-new/billing-pricing/what-happens-when-i-finish-my-1-dollar-credit",
+      "evidence": "A documentação oficial descreve US$ 1 de crédito inicial e suspensão sem método de pagamento após consumir o crédito.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-9993add2ee730df188e3418fa2c26bee",
+      "name": "Databricks Startup Program – Neon Self-Funded",
+      "org": "Neon / Databricks",
+      "category": "Ferramentas dev",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "stage": "MVP / produto inicial",
+      "eligibility": "Startup autofinanciada em estágio inicial, com menos de US$ 1 milhão captado e produto inicial ou MVP.",
+      "requirements": "Após consumir os créditos ou atingir a validade, o uso é cobrado normalmente no plano selecionado. Exigência de cartão a verificar.",
+      "value": "Até US$ 1.000 em créditos Neon",
+      "amount": 1000,
+      "currency": "USD",
+      "validity": "12 meses a partir da aceitação",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://neon.com/startups",
+      "evidence": "A página oferta até US$ 1.000 na Neon para Self-Funded, aceita contas existentes e informa validade de 12 meses com faturamento normal após consumo ou expiração.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-9e118d041c90ed434ea00616bdab58d4",
+      "name": "Vercel for Startups – canal de parceiros",
+      "org": "Vercel",
+      "category": "Ferramentas dev",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "Startup respaldada por parceiro do programa, com captação até Series A, candidatura até 12 meses da rodada mais recente e sem créditos anteriores do programa. O formulário pede prova da oferta no painel do parceiro e domínio.",
+      "requirements": "Ativação Flex Commit exige aceitar os termos e método de pagamento válido. Excedentes e uso após o período são faturados. AI Gateway usa no máximo 50% do crédito mensal; excedente segue tarifa padrão.",
+      "value": "Até US$ 30.000 em Flexible Commitment Amount",
+      "amount": 30000,
+      "currency": "USD",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://vercel.com/startups/credits",
+      "evidence": "Página oficial informa acesso Enterprise e teto variável por parceiro. O valor é o limite anunciado do compromisso flexível.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-c54db4bd0b26c608db9f72a6cf4ba384",
+      "name": "Together AI Startup Accelerator",
+      "org": "Together AI",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "Seleção para startups de IA. Aceitação de solo, autofinanciadas e Brasil a confirmar.",
+      "value": "Faixas de até US$ 15.000, US$ 30.000 ou US$ 50.000",
+      "amount": 50000,
+      "currency": "USD",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.together.ai/startup-accelerator",
+      "evidence": "A página oficial indica créditos para inferência serverless, endpoints dedicados, fine-tuning e clusters instantâneos. Exclui Reserved GPU Clusters.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-d2ebf3d8c9fee7e782acc6f654fa4c2e",
+      "name": "Gemini API – Free Tier",
+      "org": "Google",
+      "category": "Créditos de IA",
+      "country": "Brasil",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento",
+        "Estudantes"
+      ],
+      "eligibility": "Desenvolvedores com projeto ativo elegível. Alguns projetos exigem verificação. Brasil consta na lista oficial.",
+      "requirements": "O plano gratuito tem cotas por modelo. A migração para Tier 1 exige vincular conta de faturamento ativa.",
+      "value": "Acesso gratuito sujeito a modelos e limites de uso",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://aistudio.google.com/docs/billing",
+      "evidence": "O Google documenta que novas contas iniciam no Free Tier e a lista oficial de regiões inclui Brazil.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-dc8d446c52c07009d94b5d42988b3591",
+      "name": "Anthropic – créditos de API para assinantes Claude",
+      "org": "Anthropic",
+      "category": "IA e modelos",
+      "country": "A verificar",
+      "audience": [
+        "Solo founder",
+        "Startups"
+      ],
+      "eligibility": "Planos Claude Max, Ultra e Team. O benefício depende do plano ativo e do vínculo à organização do Claude Console.",
+      "requirements": "Vincular uma organização do Claude Console. O resgate não requer meio de pagamento na Claude Platform. Créditos vencem ao fim do ciclo e não acumulam.",
+      "value": "US$ 100/mês no Max, US$ 200/mês no Ultra e até US$ 500/mês compartilhados no Team",
+      "currency": "USD",
+      "validity": "Por ciclo de faturamento, ou mensalmente em planos anuais",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://platform.claude.com/docs/pt-BR/about-claude/api-credits-for-subscribers",
+      "evidence": "Documentação oficial da Claude Platform: planos elegíveis, valores, renovação, expiração e vínculo ao Console.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-f334104686a2150d78ae2ef6786f16da",
+      "name": "GroqCloud – Free Plan",
+      "org": "Groq",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento",
+        "Estudantes"
+      ],
+      "eligibility": "Conta GroqCloud no plano Free, sujeita à disponibilidade regional e cotas.",
+      "requirements": "O upgrade para Developer requer método de pagamento válido e está sujeito a cobrança por uso.",
+      "value": "Acesso gratuito à API sob cotas por modelo",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://console.groq.com/docs/rate-limits",
+      "evidence": "A matriz oficial lista limites do Free Plan por modelo relevantes a tokens e requisições. A FAQ documenta a exigência de pagamento no plano Developer.",
+      "verified": "2026-11-18"
+    },
+    {
+      "id": "radar-f56f2eed401863f22c261be7c20f9f93",
+      "name": "OpenAI for Startups – canal de parceiros VC",
+      "org": "OpenAI",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "Créditos e suporte passam por parceiros VC elegíveis; enquadramento individual e disponibilidade do canal no Brasil a confirmar.",
+      "value": "Créditos e suporte, valor não divulgado",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://openai.com/business/why-openai/startups/",
+      "evidence": "A página oficial distingue recursos públicos dos créditos disponíveis por parceiros VC elegíveis.",
+      "verified": "2026-11-18"
+    }
+  ]
+}

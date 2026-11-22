@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
   schedule:
     # 09:50 e 21:50 America/Sao_Paulo (12:50 e 00:50 UTC)
-    # Executa após a sincronização privada agendada 09:30 e 21:30.
+    # Executa após a sincronização privada agendada 09:00 e 21:00.
     - cron: '50 0,12 * * *'
 
 permissions:

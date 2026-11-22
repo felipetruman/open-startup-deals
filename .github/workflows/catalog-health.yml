@@ -1,0 +1,40 @@
+name: Open Startup Deals - integridade do catálogo público
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/deals.json'
+      - 'scripts/catalog_public.py'
+      - 'tests/test_catalog_public.py'
+      - '.github/workflows/catalog-health.yml'
+  workflow_dispatch:
+  schedule:
+    # 09:50 e 21:50 America/Sao_Paulo (12:50 e 00:50 UTC)
+    # Executa após a sincronização privada agendada 09:30 e 21:30.
+    - cron: '50 0,12 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-catalog-health
+  cancel-in-progress: false
+
+jobs:
+  test-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Testes de privacidade e consistência
+        run: python -m unittest discover -s tests -v
+      - name: Validar schema, contagem, URLs e privacidade do dataset
+        run: python scripts/catalog_public.py check --input data/deals.json
+      - name: Detectar publicação desatualizada
+        if: github.event_name == 'schedule'
+        run: python scripts/catalog_public.py check --input data/deals.json --max-age-hours 13

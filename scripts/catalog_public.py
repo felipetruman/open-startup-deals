@@ -10,7 +10,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import parse_qsl, urlsplit, urlunsplit
 
 FIELDS = (
     "id", "name", "org", "category", "country", "audience", "stage",
@@ -65,8 +65,13 @@ def checked_url(value):
     parts = urlsplit(value.strip())
     if parts.scheme != "https" or not parts.netloc or parts.username or parts.password:
         raise ValueError("official URL must be a public HTTPS URL")
-    if parts.query or parts.fragment:
-        raise ValueError("official URL has parameters/fragments; verify before exporting")
+    if parts.query:
+        allowed = {"var", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"}
+        pairs = parse_qsl(parts.query, keep_blank_values=True)
+        if not pairs or any(k not in allowed or len(v) > 80 or not re.fullmatch(r"[A-Za-z0-9_.~-]*", v) for k, v in pairs):
+            raise ValueError("official URL has unsafe query parameters")
+    if parts.fragment:
+        raise ValueError("official URL has a fragment; verify before exporting")
     if "@" in parts.netloc:
         raise ValueError("official URL contains authentication")
     return urlunsplit((parts.scheme, parts.netloc, parts.path, "", ""))
@@ -147,7 +152,7 @@ def run_export(args):
     if timestamp > utcnow() + dt.timedelta(minutes=5):
         raise ValueError("Collection timestamp is in the future")
     out = {
-        "schema_version": "1",
+        "schema_version": (old.get("schema_version", 1) if old else 1),
         "snapshot_at": timestamp.isoformat(timespec="milliseconds").replace("+00:00", "Z"),
         "verification_note": (
             "Data da captura do catálogo público em UTC. 'verified' é a data "

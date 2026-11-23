@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "snapshot_at": "2026-11-23T00:03:38.198098+00:00",
+  "snapshot_at": "2026-11-23T12:01:47.865172+00:00",
   "verification_note": "Captura autenticada do catálogo público em UTC. verified preserva a data de verificação de cada oferta. Valores anunciados não confirmam elegibilidade, aprovação ou saldo.",
-  "record_count": 35,
+  "record_count": 38,
   "license": {
     "id": "ODC-By-1.0",
     "url": "https://opendatacommons.org/licenses/by/1-0/"
@@ -319,13 +319,14 @@
       "audience": [
         "Startups"
       ],
-      "eligibility": "Sujeita aos critérios e à avaliação do Startup Program.",
+      "eligibility": "Empresa com menos de cinco anos, menos de US$ 10 milhões captados, produto com LLMs/agentes e protótipo funcional ou produto ativo, sujeita à avaliação.",
       "value": "US$ 6.000 em créditos e 6 meses de Pro",
+      "validity": "Créditos por 1 ano; Pro por 6 meses",
       "status": "Confirmado",
       "confidence": "Alta",
       "official": "https://futureagi.com/startups/",
-      "evidence": "Página oficial do Startup Program descreve créditos de plataforma por um ano e seis meses de Pro.",
-      "verified": "2026-11-22"
+      "evidence": "Página oficial confirma US$ 6.000 em créditos por um ano e seis meses de Pro. Critérios publicados: empresa com menos de cinco anos, menos de US$ 10 milhões captados, produto com LLMs/agentes e protótipo funcional ou produto ativo.",
+      "verified": "2026-11-23"
     },
     {
       "id": "radar-340957b7642c2ff002df811c61b7ae27",
@@ -387,6 +388,28 @@
       "official": "https://help.openai.com/pt-br/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions",
       "evidence": "Central de Ajuda da OpenAI, seções Elegibilidade e disponibilidade e Valores dos créditos. O benefício cobre a organização da API vinculada.",
       "verified": "2026-11-22"
+    },
+    {
+      "id": "radar-3ef62118eb46a8a897611671b5df8ec3",
+      "name": "Speechmatics – crédito inicial de API",
+      "org": "Speechmatics",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "eligibility": "Novas contas de desenvolvedor. Disponibilidade individual no Brasil e histórico da conta a confirmar.",
+      "requirements": "Sem cartão para os US$ 100 iniciais. Validade, cotas individuais e condições para continuar após o consumo devem ser confirmadas.",
+      "value": "US$ 100 iniciais em crédito de API",
+      "amount": 100,
+      "currency": "USD",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.speechmatics.com/",
+      "evidence": "A página oficial confirma US$ 100 em crédito para novas contas, sem cartão, para testar transcrição e suporte de idiomas. Benefício inicial de conta, separado do Startup Program.",
+      "verified": "2026-11-23"
     },
     {
       "id": "radar-58e7c97189cecf8b2456a8441ca938e6",
@@ -510,6 +533,29 @@
       "verified": "2026-11-22"
     },
     {
+      "id": "radar-8c40473e36ecaf7447d7395582c8e0a4",
+      "name": "PostHog for Startups",
+      "org": "PostHog",
+      "category": "Observabilidade",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "eligibility": "Empresa com menos de dois anos, menos de US$ 5 milhões captados e conta com domínio corporativo criada a partir de 01/01/2023. Uma concessão por founder e organização.",
+      "requirements": "Exige inscrição em plano pago por uso antes da candidatura. Verificar histórico de crédito já recebido. Créditos excluem PostHog AI, Desktop, Slack app, Replay Vision e Inbox, mas cobrem AI observability. Cobrança e risco de excedentes devem ser conferidos antes de aceitar.",
+      "value": "US$ 50.000 em créditos de plataforma",
+      "amount": 50000,
+      "currency": "USD",
+      "validity": "12 meses",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://posthog.com/startups",
+      "evidence": "Página e FAQ oficiais confirmam valor, validade, exigência de plano por uso, restrições de atividade e uma concessão por founder/organização. Elegibilidade individual e histórico de benefício permanecem pendentes.",
+      "verified": "2026-11-23"
+    },
+    {
       "id": "radar-8ebbf06beea2f700f97ca9552cd4020b",
       "name": "Fireworks AI – crédito inicial de API",
       "org": "Fireworks AI",
@@ -531,6 +577,28 @@
       "official": "https://docs.fireworks.ai/faq-new/billing-pricing/what-happens-when-i-finish-my-1-dollar-credit",
       "evidence": "A documentação oficial descreve US$ 1 de crédito inicial e suspensão sem método de pagamento após consumir o crédito.",
       "verified": "2026-11-22"
+    },
+    {
+      "id": "radar-96a39160e3f59a5a89ff04101d051388",
+      "name": "Speechmatics Startup Program",
+      "org": "Speechmatics",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "eligibility": "Empresa com menos de US$ 10 milhões captados, MVP em produção ou lançamento comprometido em um a dois meses, equipe ativa e caso de uso ASR. Não estar em plano Enterprise pago.",
+      "requirements": "E-mail corporativo e conversa de avaliação de 30 minutos. Programa seletivo, limitado a 20 startups por coorte. Cartão, validade, pós-crédito e disponibilidade individual no Brasil a confirmar.",
+      "value": "Até US$ 50.000 em créditos de uso",
+      "amount": 50000,
+      "currency": "USD",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.speechmatics.com/startup-program",
+      "evidence": "Página e FAQ oficiais anunciam créditos de uso, candidatura contínua, critérios de MVP e conversa de avaliação. Valor máximo sujeito à aprovação; nenhum lançamento ou tração individual foi comprovado.",
+      "verified": "2026-11-23"
     },
     {
       "id": "radar-9993add2ee730df188e3418fa2c26bee",
@@ -587,12 +655,14 @@
         "Sem investimento"
       ],
       "eligibility": "Faixa Starter para equipes com menos de US$ 1 milhão em captação, sujeita à avaliação.",
+      "requirements": "Código por e-mail após aprovação e resgate na área de faturamento. Confirmar histórico da solicitação e condições de pagamento antes de usar; pacotes Growth requerem compromisso financeiro.",
       "value": "US$ 1.000 em créditos no Starter",
+      "validity": "1 ano após emissão",
       "status": "Confirmado",
       "confidence": "Alta",
       "official": "https://www.runpod.io/startup-program",
-      "evidence": "FAQ oficial do Runpod Startup Program identifica o benefício e os critérios da faixa Starter.",
-      "verified": "2026-11-22"
+      "evidence": "A página oficial confirma Starter de US$ 1.000, código enviado por e-mail após aprovação e validade de um ano. Pacotes Growth exigem depósito e são separados do Starter.",
+      "verified": "2026-11-23"
     },
     {
       "id": "radar-b944b4cf94ef442595afbad088c2b943",

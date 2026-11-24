@@ -13,7 +13,7 @@ python radar_bridge.py --radar-url http://127.0.0.1:18788 --existing ../../data/
 
 ## Smoke real no GitHub Actions
 
-O workflow experimental roda somente no push da branch experiment/freebie-radar, em runner descartável. Constrói a imagem upstream no commit fixado, usa banco temporário, scheduler desligado, sem push, IA, login, bypass ou tokens de terceiros. Coleta exclusivamente openrouter-free e github-free-for-dev, verifica status persistido em SQLite e compara a fila com o snapshot público. Registra apenas métricas agregadas. O conteúdo externo não é publicado nem enviado como artefato. Não confundir testes de transporte/coleta com validação de elegibilidade.
+O workflow experimental roda somente no pull request da branch experiment/freebie-radar deste próprio repositório para main, em runner descartável. Constrói a imagem upstream no commit fixado, usa banco temporário, scheduler desligado, sem push, IA, login, bypass ou tokens de terceiros. Coleta exclusivamente openrouter-free e github-free-for-dev, verifica status persistido em SQLite e compara a fila com o snapshot público. Registra apenas métricas agregadas. O conteúdo externo não é publicado nem enviado como artefato. Não confundir testes de transporte/coleta com validação de elegibilidade.
 
 O coletor OpenRouter cobre modelos gratuitos recentes (janela padrão de 14 dias); não é inventário completo. Um resultado vazio pode ser legítimo para esse coletor; uma fila inteiramente vazia bloqueia o smoke.
 

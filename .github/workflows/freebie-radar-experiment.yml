@@ -1,0 +1,90 @@
+name: Freebie Radar - isolated experiment
+on:
+  push:
+    branches: [experiment/freebie-radar]
+    paths:
+      - 'experiments/freebie-radar/**'
+      - '.github/workflows/freebie-radar-experiment.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Existing catalog tests
+        run: python -m unittest discover -s tests -v
+      - name: Experimental bridge tests
+        working-directory: experiments/freebie-radar
+        run: python -m unittest discover -s tests -v
+  live-smoke:
+    needs: unit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Checkout fixed upstream
+        uses: actions/checkout@v4
+        with:
+          repository: ZiChuanLan/freebie-radar
+          ref: 0bcd789595662893fc61c0e935f5f8641eae1f2f
+          path: upstream
+          persist-credentials: false
+      - name: Build isolated upstream
+        run: docker build -t osd-freebie-lab:local upstream
+      - name: Start isolated radar
+        run: |
+          token=$(openssl rand -hex 24)
+          echo "::add-mask::$token"
+          docker run -d --name osd-freebie-lab \
+            -p 127.0.0.1:18788:8788 \
+            -e HOST=0.0.0.0 -e ENABLE_SCHEDULER=false -e SITE_MODE=selfhost \
+            -e PUSH_CHANNEL=none -e ADMIN_TOKEN="$token" \
+            -e AI_BASE_URL= -e AI_MODEL= -e AI_API_KEY= \
+            -e GITHUB_TOKEN= -e FLARESOLVERR_URL= -e TZ=UTC \
+            osd-freebie-lab:local
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:18788/health >/dev/null; then exit 0; fi
+            sleep 2
+          done
+          exit 1
+      - name: Collect only approved sources
+        run: |
+          docker exec osd-freebie-lab node --no-warnings src/server/cli.ts collect openrouter-free github-free-for-dev > /tmp/freebie-collect.log 2>&1
+          docker exec osd-freebie-lab node --no-warnings --input-type=module -e '
+            import { DatabaseSync } from "node:sqlite";
+            const db = new DatabaseSync("/data/radar.db", {readOnly:true});
+            const rows = db.prepare("SELECT source_id,status,fetched,inserted,duration_ms FROM runs ORDER BY id").all();
+            console.log(JSON.stringify(rows));
+            const ids = ["openrouter-free","github-free-for-dev"];
+            if(rows.length!==2 || ids.some(id=>!rows.some(r=>r.source_id===id && r.status==="ok"))) process.exit(1);
+          '
+      - name: Compare candidates without publishing content
+        working-directory: experiments/freebie-radar
+        run: |
+          python radar_bridge.py --radar-url http://127.0.0.1:18788 --existing ../../data/deals.json --output out/candidates.json
+          python - <<'PY'
+          import json
+          d=json.load(open("out/candidates.json"))
+          assert d["candidate_count"]>0, "No candidate collected"
+          assert all(c["status"]=="pending_verification" and c["official"] is None and c["verified"] is None for c in d["candidates"])
+          duplicates=sum(bool(c["possible_existing_ids"]) for c in d["candidates"])
+          print("Candidates:",d["candidate_count"],"possible existing:",duplicates)
+          PY
+          git diff --exit-code -- ../../data/deals.json
+      - name: Remove isolated container and anonymous volume
+        if: always()
+        run: docker rm -fv osd-freebie-lab || true

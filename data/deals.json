@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "snapshot_at": "2026-11-24T00:01:41.329463+00:00",
+  "snapshot_at": "2026-11-24T12:05:41.333086+00:00",
   "verification_note": "Captura autenticada do catálogo público em UTC. verified preserva a data de verificação de cada oferta. Valores anunciados não confirmam elegibilidade, aprovação ou saldo.",
-  "record_count": 38,
+  "record_count": 41,
   "license": {
     "id": "ODC-By-1.0",
     "url": "https://opendatacommons.org/licenses/by/1-0/"
@@ -182,6 +182,29 @@
       "official": "https://www.notion.com/startups",
       "evidence": "A FAQ oficial distingue explicitamente um mês para agências e equipes menores e faixas de três a seis meses para startups de tecnologia elegíveis.",
       "verified": "2026-11-22"
+    },
+    {
+      "id": "radar-0a0717b87c0b010a5f2462ec2e09db40",
+      "name": "Exa for Startups – direto",
+      "org": "Exa",
+      "category": "Créditos de IA",
+      "country": "A verificar",
+      "audience": [
+        "Startups",
+        "Solo founder",
+        "Sem investimento"
+      ],
+      "eligibility": "Startups de pre-seed a Series A construindo com IA e novas nos planos pagos da Exa. Uma concessão por empresa, sujeita à aprovação; enquadramento individual brasileiro a verificar.",
+      "requirements": "Exige conta Exa, equipe de destino e aceite dos termos. Crédito inicial separado do matching por recarga: até US$ 5.000 adicionais exigem gasto correspondente. Não combina com outras ofertas. Cartão e uso presencial não encontrados, confirmar.",
+      "value": "US$ 2.500 iniciais após aprovação; matching 1:1 de até US$ 5.000 exige recarga",
+      "amount": 2500,
+      "currency": "USD",
+      "validity": "Inicial vence 6 meses após emissão; matching vence 12 meses após adesão",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://exa.ai/startups",
+      "evidence": "Página oficial distingue tier direto de parceiro: US$ 2.500 iniciais e matching até US$ 5.000 no direto. Termos limitam benefício combinado a US$ 7.500 no direto e US$ 15.000 via parceiros; o teto não representa saldo gratuito concedido.",
+      "verified": "2026-11-24"
     },
     {
       "id": "radar-0f2a41b07973f12e097a26e6d5fc6bb9",
@@ -533,6 +556,24 @@
       "verified": "2026-11-22"
     },
     {
+      "id": "radar-87ed9dcaf4ce6138f966da2314c43223",
+      "name": "DigitalOcean Startups – novas candidaturas pausadas",
+      "org": "DigitalOcean",
+      "category": "Créditos em nuvem",
+      "country": "A verificar",
+      "audience": [
+        "Startups"
+      ],
+      "eligibility": "Novas candidaturas temporariamente pausadas. Novo programa previsto para o início de 2027, sem data exata publicada.",
+      "requirements": "Programa exige conta de equipe, domínio corporativo e cartão válido. Excedentes são cobrados. Créditos core não cobrem GPU Droplets; GPU tem processo separado. Manter fora da fila de nova candidatura enquanto pausado.",
+      "value": "Valor definido na concessão; novas inscrições pausadas",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://www.digitalocean.com/startups",
+      "evidence": "FAQ oficial consultada em 24/11/2026 informa pausa nas inscrições e previsão de programa atualizado no início de 2027. Membros ativos mantêm benefícios conforme concessão original. Termos exigem cartão e cobram uso fora da cobertura.",
+      "verified": "2026-11-24"
+    },
+    {
       "id": "radar-8c40473e36ecaf7447d7395582c8e0a4",
       "name": "PostHog for Startups",
       "org": "PostHog",
@@ -663,6 +704,26 @@
       "official": "https://www.runpod.io/startup-program",
       "evidence": "A página oficial confirma Starter de US$ 1.000, código enviado por e-mail após aprovação e validade de um ano. Pacotes Growth exigem depósito e são separados do Starter.",
       "verified": "2026-11-23"
+    },
+    {
+      "id": "radar-b71943b86c7ac0d0be4de8ba1e888154",
+      "name": "Exa – créditos para estudantes",
+      "org": "Exa",
+      "category": "Benefícios acadêmicos",
+      "country": "A verificar",
+      "audience": [
+        "Estudantes"
+      ],
+      "eligibility": "Estudantes podem solicitar US$ 100, sujeitos à avaliação. Vínculo acadêmico individual deve ser comprovado.",
+      "requirements": "Confirmar processo de comprovação, conta, validade e exigência de pagamento antes de solicitar. Benefício separado da oferta startup e das faixas para educadores/pesquisadores.",
+      "value": "US$ 100 mediante solicitação e aprovação",
+      "amount": 100,
+      "currency": "USD",
+      "status": "Confirmado",
+      "confidence": "Alta",
+      "official": "https://exa.ai/startups",
+      "evidence": "A FAQ oficial Exa for Startups indica que estudantes podem solicitar US$ 100 em créditos; educadores e pesquisadores têm avaliação distinta de até US$ 1.000. Nenhuma solicitação ou concessão individual confirmada.",
+      "verified": "2026-11-24"
     },
     {
       "id": "radar-b944b4cf94ef442595afbad088c2b943",

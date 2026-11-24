@@ -1,7 +1,7 @@
 name: Freebie Radar - isolated experiment
 on:
-  push:
-    branches: [experiment/freebie-radar]
+  pull_request:
+    branches: [main]
     paths:
       - 'experiments/freebie-radar/**'
       - '.github/workflows/freebie-radar-experiment.yml'
@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   unit:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'experiment/freebie-radar'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
